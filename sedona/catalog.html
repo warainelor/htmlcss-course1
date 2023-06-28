@@ -37,6 +37,50 @@
   </header>
 
 <main class="page-main">
+  <h1 class="page-main-header">Гостиницы Седоны</h1>
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="index.html">
+        <span class="visually-hidden">Главная страница</span>
+      </a>
+    </li>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link">
+        Гостиницы
+      </a>
+    </li>
+  </ul>
+
+  <section class="filter">
+    <h2 class="visually-hidden">Фильтр списка гостиниц</h2>
+
+    <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="filter-fieldset">
+        <legend class="filter-title">Инфраструктура:</legend>
+
+        <ul class="filter-list">
+          <li class="filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked>
+              <span class="control-lead">Бассейн</span>
+            </label>
+          </li>
+          <li class="filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
+              <span class="control-lead">Парковка</span>
+            </label>
+          </li>
+          <li class="filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="infrastructure" value="wi-fi">
+              <span class="control-lead">Wi-Fi</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </section>
 
 </main>
 
