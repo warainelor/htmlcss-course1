@@ -79,7 +79,109 @@
           </li>
         </ul>
       </fieldset>
+
+      <fieldset class="filter-fieldset">
+        <legend class="filter-title">Тип жилья:</legend>
+
+        <ul class="filter-list">
+          <li class="filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="apartment-type" value="hotel" checked>
+              <span class="control-lead">Гостиница</span>
+            </label>
+          </li>
+          <li class="filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="apartment-type" value="motel">
+              <span class="control-lead">Мотель</span>
+            </label>
+          </li>
+          <li class="filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="apartment-type" value="apartment">
+              <span class="control-lead">Апартаменты</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="filter-fieldset">
+        <legend class="filter-title">Стоимость, ₽</legend>
+
+        <div class="range">
+          <label class="range-field">
+            <span class="range-title">от</span>
+            <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100">
+          </label>
+
+          <label class="range-field">
+            <span class="range-title">до</span>
+            <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100">
+          </label>
+
+          <div class="range-slider slider">
+            <div class="slider-bar">
+              <button class="slider-thumb" type="button">
+                <span class="visually-hidden">Ручка минимальной цены</span>
+              </button>
+              <button class="slider-thumb" type="button">
+                <span class="visually-hidden">Ручка максимальной цены</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="filter-buttons">
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="reset">Сбросить</button>
+      </div>
     </form>
+  </section>
+
+  <section class="catalog">
+    <h2 class="visually-hidden">Результаты поиска</h2>
+    <p class="section-title">Найдено гостиниц: 38</p>
+
+    <h3 class="visually-hidden">Сортировка и отображение</h3>
+    <details class="select">
+      <summary class="select-button">Сначала дешёвые</summary>
+
+      <ul class="select-menu">
+        <li class="select-item select-item-active">
+          <a class="select-option" href="#">Сначала дешёвые</a>
+        </li>
+        <li class="select-item">
+          <a class="select-option" href="#">Сначала дорогие</a>
+        </li>
+        <li class="select-item">
+          <a class="select-option" href="#">Сначала популярные</a>
+        </li>
+        <li class="select-item">
+          <a class="select-option" href="#">Сначала комфортные</a>
+        </li>
+      </ul>
+    </details>
+
+    <ul class="view">
+      <li class="view-item view-item-active">
+        <a class="view-link">
+          <span class="visually-hidden">Карточками</span>
+        </a>
+      </li>
+      <li class="view-item">
+        <a class="view-link" href="#">
+          <span class="visually-hidden">Слайдами</span>
+        </a>
+      </li>
+      <li class="view-item">
+        <a class="view-link" href="#">
+          <span class="visually-hidden">Списком</span>
+        </a>
+      </li>
+    </ul>
+
+
   </section>
 
 </main>
